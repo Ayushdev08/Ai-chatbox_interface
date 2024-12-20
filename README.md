@@ -1,4 +1,4 @@
-Here’s a GitHub-friendly README for your project that’s designed to be concise, informative, and ATS-friendly:
+Here is an updated version of the README with placeholders for screenshots of the login page and chat page:
 
 ---
 
@@ -14,6 +14,20 @@ A simple chat application built with React, designed to simulate a chatbot that 
 - **Chat History**: View past conversations and load them with a click.
 - **Responsive UI**: The app layout is optimized for both desktop and mobile screens.
 - **Logout Functionality**: Securely log out and reset the user state.
+
+## **Screenshots**
+
+### **Login Page**
+
+![Login Page](./screenshots/login-page.png)
+
+The login page where users can enter their credentials and access the chat interface. It features a "Remember me" option to persist credentials across sessions.
+
+### **Chat Page**
+
+![Chat Page](./screenshots/chat-page.png)
+
+The main chat interface where users can interact with the bot. Here, users can choose between different departments and view chat history.
 
 ## **Installation**
 
@@ -80,6 +94,11 @@ Feel free to fork this repository, submit pull requests, or open issues for any 
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
+---
 
+### **Notes:**
 
-This README provides a comprehensive overview of your project, installation instructions, tech stack, features, and potential enhancements. It’s designed to be clear and concise for developers and potential contributors.
+1. Make sure to create a `screenshots` folder in your project directory and upload the images `login-page.png` and `chat-page.png` there.
+2. Replace `<your-username>` in the clone URL with your actual GitHub username.
+
+This will display your app’s interface clearly for visitors and contributors, making it easy for them to understand the layout and usage.
