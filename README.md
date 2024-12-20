@@ -19,13 +19,13 @@ A simple chat application built with React, designed to simulate a chatbot that 
 
 ### **Login Page**
 
-![Login Page](./screenshots/login-page.png)
+![Login Page](./screenshots/loginpg.png)
 
 The login page where users can enter their credentials and access the chat interface. It features a "Remember me" option to persist credentials across sessions.
 
 ### **Chat Page**
 
-![Chat Page](./screenshots/chat-page.png)
+![Chat Page](./screenshots/chatpage.png)
 
 The main chat interface where users can interact with the bot. Here, users can choose between different departments and view chat history.
 
