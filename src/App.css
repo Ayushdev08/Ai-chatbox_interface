@@ -1,0 +1,373 @@
+/* Global Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fa;
+  color: #444;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Center login page */
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6eff1;
+}
+
+.login-form-container {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-header h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.login-header p {
+  color: #777;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 20px;
+  position: relative;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 15px 12px 40px; /* Ensure enough space for icons */
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #555;
+  font-size: 14px;
+  transition: border-color 0.3s, padding-left 0.3s; /* Add transition for padding to smoothly adjust */
+  box-sizing: border-box;
+  line-height: 1.6;  /* Ensure proper line height */
+}
+
+.input-field:focus {
+  border-color: #3498db;
+  outline: none;
+  padding-left: 15px; /* Shrink the padding to account for the disappearing icon */
+}
+
+.input-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;  /* Adjust the icon to be inside the input */
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #888;
+  transition: opacity 0.3s ease; /* Smooth transition for opacity */
+}
+
+.input-field:not(:placeholder-shown) + .input-icon, /* When input is not empty, icons disappear */
+.input-field:focus + .input-icon {
+  opacity: 0;
+}
+
+/* Rest of the styles remain the same */
+
+.remember-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.remember {
+  display: flex;
+  align-items: center;
+}
+
+.remember input {
+  margin-right: 5px;
+}
+
+.forgot-password {
+  color: #3498db;
+  font-size: 14px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.error-message {
+  color: #e74c3c;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Chat Interface */
+.chat-interface {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.chat-header {
+  background-color: #38b2ac;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.department-select {
+  margin-left: 10px;
+  padding: 8px 12px;
+  background-color: #fff;
+  border-radius: 5px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.logout-btn {
+  display: flex;
+  align-items: center;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.chat-content {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #fff;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 2px 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.new-chat-btn {
+  display: flex;
+  align-items: center;
+  background-color: #3498db;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.new-chat-btn:hover {
+  background-color: #2980b9;
+}
+
+.chat-history {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.chat-history-header {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.chat-history-item {
+  padding: 10px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-align: left;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.chat-history-item:hover {
+  background-color: #f0f0f0;
+}
+
+.chat-area {
+  flex: 1;
+  padding: 20px;
+  background-color: #fafafa;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.message {
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  max-width: 80%;
+}
+
+.message.user {
+  background-color: #e3e3e3;
+  color: #333;
+  align-self: flex-start;
+}
+
+.message.bot {
+  background-color: #38b2ac;
+  color: #fff;
+  align-self: flex-end;
+}
+
+.input-area {
+  display: flex;
+  align-items: center;
+}
+
+.input-form {
+  display: flex;
+  width: 100%;
+}
+
+.input-field {
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.send-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .chat-content {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    border-right: none;
+    margin-bottom: 20px;
+  }
+
+  .chat-area {
+    padding: 10px;
+  }
+
+  .header-left,
+  .header-right {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .department-select {
+    margin-top: 10px;
+  }
+
+  .messages {
+    padding: 10px;
+  }
+
+  .input-field {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-form-container {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  .input-field {
+    font-size: 14px;
+  }
+
+  .login-btn {
+    padding: 12px;
+  }
+
+  .new-chat-btn {
+    padding: 10px 15px;
+  }
+
+  .send-btn {
+    padding: 10px 15px;
+  }
+}
